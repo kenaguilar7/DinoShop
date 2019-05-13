@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+/*Variables*/
+
+:root {
+  --blue-hard-color: #142d4c;
+  --blue-color: #385170;
+  --white-color: white;
+  --azul-marino-color: #87aebe;
+  /*espaciado*/
+  --space: 10px;
+  /*tipografia*/
+  --pequenia: 12px; 
+  --normal: 15px;
+  --media: 20px;
+  --grande: 40px; 
+  --color-texto: #292727; 
+  /*Box Shadow*/
+  --box: 0 0 2px #c1b1bcbc;
+}
+html,
+body {
+  padding: 0%;
+  margin: 0%;
+  font-size: var(--normal);
+  font-family: "Open Sans", sans-serif;
+
+}
+nav div p {
+  margin: 0;
+  font-size: 20px;
+}
+nav {
+  display: flex;
+  background-color: var(--blue-color);
+  padding: var(--space);
+  color: var(--white-color);
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+}
+nav li {
+  padding-left: 20px;
+  list-style: none;
+}
+
+nav li a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: var(--azul-marino-color);
+}
+
+label{
+    font-size: var(--normal)
+}
+.dino_shop p{
+    color: white; 
+}
+/*----------------------------------- Main section*/
+
+.main_section {
+  padding: 5% 10% 18%;
+  text-align: center;
+}
+.main_section h1{
+    font-size: var(--grande); 
+    color: #2b2727; 
+}
+.products {
+  background-image: url("../images/Trazado.png");
+  padding: 5% 15% ;
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 250px;
+  background-size: cover;
+}
+.product {
+  padding: var(--space);
+  margin-top: -160px;
+  /* width: 100%; */
+
+}
+
+.product .content {
+  background-color: var(--white-color);
+  padding: 20px;
+  box-shadow: var(--box);
+}
+.img_content {
+  text-align: center;
+  max-height: 200px;
+}
+#dino_1 {
+  background-image: url("../images/dino_1.jpg");
+  height: 150px;
+}
+#dino_2 {
+  background-image: url("../images/dino_2.jpg");
+  height: 150px;
+}
+#dino_1,
+#dino_2 {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.main_button {
+  background-color: var(--blue-color);
+  width: 100%;
+  padding: var(--space);
+  font-size: 15px;
+  color: var(--white-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.main_button:hover {
+  background-color: #273a52;
+}
+
+/*Beneficio*/
+.beneficios {
+  box-shadow: var(--box);
+  padding: 5%;
+  display: flex;
+}
+
+.beneficio .content {
+  margin: 50px;
+  text-align: center;
+}
+.txt_beneficio {
+  /* text-align: justify; */
+  color: var(--color-texto);
+}
+/*mentions*/
+.mentions_div{
+    display: inline;
+}
+#parrafo_mention{
+    text-align: center; 
+}
+.mentions {
+  padding: 3% 5%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+}
+
+/*Damos el tamaño del div que contendra las fotos*/
+.mention {
+  box-shadow: var(--box);
+  padding: 5px;
+  margin: 10px;
+  width: 100%;
+}
+.img_mention {
+  height: 175px;
+  /* border: 2px solid black;  */
+}
+/*ponemos las imagenes*/
+#mention1 {
+  background-image: url("../images/comentario_diego.jpg");
+}
+#mention2 {
+  background-image: url("../images/comentario_ezra.jpg");
+}
+#mention3 {
+  background-image: url("../images/comentario_hippie.JPG");
+}
+#mention4 {
+  background-image: url("../images/coemtario_barack.jpg");
+}
+.img_mention {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+
+/*-------------------------------------------Venta*/
+
+.modulo_pago{
+    background-color: var(--white-color);
+    box-shadow: var(--box); 
+    padding: var(--space);
+    
+}
+.modulo_pago_img{
+    text-align: center;
+}
+.box_name, .box_mail, .box_phone {
+    padding: 0px 10px 15px;
+    margin: 20px 0px 30px;
+    border: 1px solid #c1b1bcbc; 
+    border-radius: 3px; 
+   
+}
+
+.modulo_pago input[type="text"]{
+    height: 18px;
+    width: 100%;
+    border:none; 
+    outline: none;
+  
+}
+
+.div_txt label  {
+    font-size: var(--pequenia); 
+    margin: -5px;
+    opacity:0;
+}
+input:focus{
+    border:none;
+ }
+
+/* ------------------------------------------- Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--normal);
+  background-color: var(--blue-hard-color);
+  padding: var(--space);
+  color: var(--white-color);
+}
+
+.contact a {
+  color: var(--white-color);
+}

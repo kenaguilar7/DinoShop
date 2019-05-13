@@ -1,0 +1,14 @@
+body{
+    background-color: #87AEBE; 
+    text-align: center; 
+    color: #142D4C;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+}
+
+.content_exito a{
+    color: #142D4C;  
+    
+}
